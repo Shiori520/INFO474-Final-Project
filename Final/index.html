@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Radial Diagram</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+  <div class="container text-center">
+    <h3 class="my-5">United States Weather Trends</h3>
+    <h5>Explore 
+            <select class="custom-select" id="tempSelect" onchange="onTempChanged()">
+              <option selected value="actual_mean_temp" name="Daily Average Temperatures (2014 - 2015)">Daily Average Temperatures</option>
+              <option value="record_min_temp" name="Lowest Recorded Temperatures since 1880">Record Minimum Temperatures</option>
+              <option value="record_max_temp" name="Highest Recorded Temperatures since 1880">Record Maximum Temperatures</option>
+              
+            
+            </select>
+        in       
+           <select class="custom-select" id="citySelect" onchange="onCityChanged()">
+             <option value="KSEA">Seattle, Washington</option>
+             <option value="CLT">Charlotte, North Carolina</option>
+             <option value="CQT">Los Angeles, California</option>
+             <option value="IND">Indianapolis, Indiana</option>
+             <option value="JAX">Jacksonville, Florida</option>
+             <option value="MDW">Chicago, Illinois</option>
+             <option value="PHL">Philadelphia, Pennsylvania</option>
+             <option value="PHX">Phoenix, Arizona</option>
+             <option value="KHOU">Houston, Texas</option>
+             <option value="KNYC">New York, New York</option>
+           </select>
+   
+          </H5>
+
+
+
+  </div>
+
+  
+</body>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="./main.js"></script>
+</html>
